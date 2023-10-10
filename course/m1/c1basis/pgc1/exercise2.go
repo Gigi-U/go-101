@@ -1,4 +1,4 @@
-package pg
+package pgc1
 import (
 	"fmt"
 )
@@ -9,7 +9,7 @@ Es necesario realizar una aplicación que tenga estas variables y que imprima un
 Pista: Tu código tiene que poder imprimir al menos tres mensajes diferentes. */
 
 
-func Exercise2() {
+func Prestamo() {
 	var edad, antiguedad uint8
 	var empleado bool
 	var sueldo float32

@@ -1,4 +1,4 @@
-package pg
+package pgc1
 import (
 	"fmt"
 )
@@ -6,7 +6,7 @@ import (
 Una tienda de ropa quiere ofrecer a sus clientes un descuento sobre sus productos. Para ello necesitan una aplicación que les permita calcular el descuento basándose en dos variables: su precio y el descuento en porcentaje. La tienda espera obtener como resultado el valor con el descuento aplicado y luego imprimirlo en consola.
 Crear la aplicación de acuerdo a los requerimientos. */
 
-func Exercise1() {
+func Descuento() {
 
 	var precio, porcentaje, precioFinal float32
 

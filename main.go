@@ -5,8 +5,9 @@ import (
 	"fmt"
 
 	"github.com/Gigi-U/go-101.git/course/m1/c1basis"
-	"github.com/Gigi-U/go-101.git/course/m1/c1basis/mt"
-	"github.com/Gigi-U/go-101.git/course/m1/c1basis/pg"
+	"github.com/Gigi-U/go-101.git/course/m1/c1basis/mtc1"
+	"github.com/Gigi-U/go-101.git/course/m1/c1basis/pgc1"
+	"github.com/Gigi-U/go-101.git/course/m1/c2functions/pgc2"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
@@ -59,11 +60,16 @@ func main() {
 
 	fmt.Println("--------CLASES--------------")
 	fmt.Println("--------CLASE 01--------------")
-	c1.Class()
-	mt.Exercise1()
-	mt.Exercise2()
-	pg.Exercise1()
-	pg.Exercise2()
+	c1basis.Class()
+	mtc1.Exercise1()
+	mtc1.Exercise2()
+	pgc1.Descuento()
+	pgc1.Prestamo()
 
+	fmt.Println("--------CLASE 02--------------")
+	pgc2.CalcularPromedio()
+	pgc2.ImpuestosSalario()
+	pgc2.Tutorial()
+	
 }
 
