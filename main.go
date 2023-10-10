@@ -4,9 +4,9 @@ import (
 	// here you import all other packages
 	"fmt"
 
-	"github.com/Gigi-U/go-101.git/course/c1"
-	"github.com/Gigi-U/go-101.git/course/c1/mt"
-	"github.com/Gigi-U/go-101.git/course/c1/pg"
+	"github.com/Gigi-U/go-101.git/course/m1/c1"
+	"github.com/Gigi-U/go-101.git/course/m1/c1/mt"
+	"github.com/Gigi-U/go-101.git/course/m1/c1/pg"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
