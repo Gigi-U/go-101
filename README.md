@@ -22,5 +22,17 @@
             datatypes.Hello()
         }      
 
-
-Para correr una función sola: 
+// a traducir
+🤖 Si quiero ver los comentarios de los archivos debo posicionarme en la carpeta que estoy usando escribir en la terminal el comando: 
+		
+  		go doc --all
+	
+	🤖 Si quiero ver la  documentación comentada en github puedo verla entrando a :
+		
+  		godoc.org/github.com/miUsuario/miRepo
+	
+	🤖 Si necesito agregar dependencias escribo en la terminal el comando: 
+		
+  		go get -u github.com/gin-gonic/gin
+  
+	(no puedo agregarlo si no lo voy a utilizar , xq sino me va a chillar)
