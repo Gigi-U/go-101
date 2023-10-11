@@ -9,6 +9,7 @@ import (
 	"github.com/Gigi-U/go-101.git/course/m1/c1basis/pgc1"
 	"github.com/Gigi-U/go-101.git/course/m1/c2functions/pgc2"
 	"github.com/Gigi-U/go-101.git/datatypes"
+	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
 	"github.com/Gigi-U/go-101.git/structures"
@@ -56,8 +57,6 @@ func main() {
 	fmt.Println("\n--------OPERATORS--------------")
 	operators.Operators()
 
-	fmt.Println("--------FUNCTIONS--------------")
-
 	fmt.Println("--------CLASES--------------")
 	fmt.Println("--------CLASE 01--------------")
 	c1basis.Class()
@@ -70,6 +69,19 @@ func main() {
 	pgc2.CalcularPromedio()
 	pgc2.ImpuestosSalario()
 	pgc2.Tutorial()
+
+	fmt.Println("--------FUNCTIONS--------------")
+	functions.Hello("Gisela","Urriza\n")
+	functions.Change() 
+	functions.Sum(2,3)
+	functions.Convert("TodO a MINUSculA O mayUSCULa  ")
+	functions.ManejoErrores()
+	functions.ErrorDivision()
+	functions.FiltradorDeValores()
+	functions.Hi()
+	functions.Sum(1,4)
+	functions.Anonima()
+
 	
 }
 

@@ -27,12 +27,14 @@
 		
   		go doc --all
 	
-	🤖 Si quiero ver la  documentación comentada en github puedo verla entrando a :
+🤖 Si quiero ver la  documentación comentada en github puedo verla entrando a :
 		
   		godoc.org/github.com/miUsuario/miRepo
 	
-	🤖 Si necesito agregar dependencias escribo en la terminal el comando: 
+🤖 Si necesito agregar dependencias escribo en la terminal el comando: 
 		
   		go get -u github.com/gin-gonic/gin
   
-	(no puedo agregarlo si no lo voy a utilizar , xq sino me va a chillar)
+(no puedo agregarlo si no lo voy a utilizar, xq sino me va a chillar)
+
+🤖 Si necesito actualizar (sale error): go mod tidy
