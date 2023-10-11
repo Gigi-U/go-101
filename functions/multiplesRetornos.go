@@ -12,3 +12,10 @@ func Convert(text string)(string, string){
 	
 	return minuscula, mayuscula
 }
+
+
+
+
+ 
+
+ 

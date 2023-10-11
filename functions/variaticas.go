@@ -13,6 +13,7 @@ func main() {
 // }
 
 // ? si estoy recibiendo n cantidad de valores que pueden diferir de los parametros tenemos las FUNCIONES VARIATICAS. que nos permiten recibir un número variable de parámetros de un mismo tipPrintln(a)
+//& las ... se llaman ELLIPSIS
 func sum(nums ...int) int {
 	total := 0
 	for _, v := range nums {

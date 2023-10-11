@@ -37,3 +37,4 @@ func hello(name string)func(string)string{
 		return "hello "+name+" "+text
 	}
 }
+

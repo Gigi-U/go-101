@@ -81,6 +81,8 @@ func main() {
 	functions.Hi()
 	functions.Sum(1,4)
 	functions.Anonima()
+	functions.Calcular()
+	functions.RetornoValor()
 
 	
 }
