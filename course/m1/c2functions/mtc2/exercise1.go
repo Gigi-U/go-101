@@ -19,14 +19,14 @@ const(
 	catB = "Category B"
 	catC = "Category C"
 	//  ERROR EXAMPLE
-	wrongCategory ="Category X"
+	wrongCategory ="Category D"
 )
-// Here we set our orchestrating function
+// Here we set the function that will be called by the main.go file
 func Exercise1() {
-	
-	salaryAFunction, err := orchestrator(catA)
-	salaryBFunction, err := orchestrator(catB)
-	salaryCFunction, err := orchestrator(catC)
+	// here we create the variables for the minutes imput and the errors
+	funcAMinutesParam, err := orchestrator(catA)
+	funcBMinutesParam, err := orchestrator(catB)
+	funcCMinutesParam, err := orchestrator(catC)
 	//  ERROR EXAMPLE
 	_, err = orchestrator(wrongCategory)
 	
@@ -35,19 +35,18 @@ func Exercise1() {
 		fmt.Println("An Error has ocurred:", err.Error())
 	}		
 
-	// here we set the final ammount variables with the parameter minutes. 
-	salaryA := salaryAFunction(7560)
-	salaryB := salaryBFunction(7560)
-	salaryC := salaryCFunction(7560)
+	// here we set the final amount variables with the parameter minutes. 
+	salaryA := funcAMinutesParam(7560)
+	salaryB := funcBMinutesParam(7560)
+	salaryC := funcCMinutesParam(0)
 
-	// Here we print the final ammounts 
+	// Here we print the final ammounts to be printed in the console
 	fmt.Printf("Category A salary: %.2f \n", salaryA)
 	fmt.Printf("Category B salary: %.2f \n", salaryB)
 	fmt.Printf("Category C salary: %.2f \n", salaryC)
-	
-	//! %.2f me muestra .00 en decimales		
+				//! %.2f me muestra .00 en decimales		
 }
-// Here we create the Switch Function that will recieve a string and return the total amount or the error string.
+// Here we create the Switch Function that will orchestrate the Functions below and return their result or notify the error string if the category given is wrong.
 	func orchestrator(category string)(func(int)float32, error ) {
 	switch category {
 	case catA:
@@ -60,28 +59,31 @@ func Exercise1() {
 		return nil, errors.New("Category Not Found")
 	}
 }
+var timeToWork string="No Bee no Honey. Lets get get things done! 🐝"
 // Common variables for Salary calculator Functions
-var totalSalary float32
 // Here we calculate the salary -  Category A
 func categoryA(minutes int)float32{
+	var totalSalary float32
 	if minutes > 0{
 		totalSalary = (float32(minutes)/60) * 3000 + 3000* .5 
-	}else{fmt.Println("Please enter a valid number of minutes.")}	
+	}else{fmt.Println("A category employee: ",timeToWork)}	
 
 	return  totalSalary
 }
 // Here we calculate the salary - Category B
 func categoryB(minutes int)float32{
+	var totalSalary float32
 	if minutes > 0 {
 		totalSalary = (float32(minutes)/60) * 1500 + 3000  * .2 
-	}else{fmt.Println("Please enter a valid number of minutes.")}	
+	}else{fmt.Println("B category employee: ",timeToWork)}	
 
 	return  totalSalary
 }
 // Here we calculate the salary - Category C
 func categoryC(minutes int)float32 {
+	var totalSalary float32
 	if minutes > 0 {
 		totalSalary = (float32(minutes)/60) * 1000
-	}else{fmt.Println("Please enter a valid number of minutes.")}	
+	}else{fmt.Println("C category employee: ",timeToWork)}	
 	return totalSalary
 }
