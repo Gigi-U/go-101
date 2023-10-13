@@ -40,13 +40,13 @@ func Exercise1() {
 	salaryB := funcBMinutesParam(7560)
 	salaryC := funcCMinutesParam(0)
 
-	// Here we print the final ammounts to be printed in the console
+	// Here we print the final ammounts in the console
 	fmt.Printf("Category A salary: %.2f \n", salaryA)
 	fmt.Printf("Category B salary: %.2f \n", salaryB)
 	fmt.Printf("Category C salary: %.2f \n", salaryC)
-				//! %.2f me muestra .00 en decimales		
+				//! %.2f shows result as float + 2 decimals 		
 }
-// Here we create the Switch Function that will orchestrate the Functions below and return their result or notify the error string if the category given is wrong.
+// Here we create the Switch Function that will orchestrate the Functions below and return their result or notify an error if the category given do not exist.
 	func orchestrator(category string)(func(int)float32, error ) {
 	switch category {
 	case catA:
@@ -59,8 +59,10 @@ func Exercise1() {
 		return nil, errors.New("Category Not Found")
 	}
 }
-var timeToWork string="No Bee no Honey. Lets get get things done! 🐝"
-// Common variables for Salary calculator Functions
+
+// common message variable for functions below
+var timeToWork string="No Bee no Honey. Lets get things done! 🐝"
+
 // Here we calculate the salary -  Category A
 func categoryA(minutes int)float32{
 	var totalSalary float32
@@ -70,6 +72,7 @@ func categoryA(minutes int)float32{
 
 	return  totalSalary
 }
+
 // Here we calculate the salary - Category B
 func categoryB(minutes int)float32{
 	var totalSalary float32
@@ -79,6 +82,7 @@ func categoryB(minutes int)float32{
 
 	return  totalSalary
 }
+
 // Here we calculate the salary - Category C
 func categoryC(minutes int)float32 {
 	var totalSalary float32

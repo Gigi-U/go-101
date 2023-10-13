@@ -13,7 +13,6 @@ import (
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
-	"github.com/Gigi-U/go-101.git/prueba"
 	"github.com/Gigi-U/go-101.git/structures"
 	"github.com/Gigi-U/go-101.git/varandconst"
 )
@@ -90,6 +89,5 @@ func main() {
 	mtc2.Exercise1()
 
 	fmt.Println("--------PRUEBA--------------")
-	prueba.Prueba()
 }
 
