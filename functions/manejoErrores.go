@@ -34,7 +34,7 @@ func ErrorDivision(){
 }
 func division(dividendo, divisor int)(int, error){
 	if divisor == 0{
-		return 0,errors.New("No puedes dividir por cero")
+		return 0, errors.New("No puedes dividir por cero")
 	}
 	return dividendo / divisor, nil
 }

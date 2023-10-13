@@ -34,7 +34,7 @@ func Hi(){
 
 func hello(name string)func(string)string{
 	return func(text string) string {
-		return "hello "+name+" "+text
+		return "hello "+ name +" "+ text
 	}
 }
 

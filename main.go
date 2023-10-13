@@ -7,11 +7,13 @@ import (
 	"github.com/Gigi-U/go-101.git/course/m1/c1basis"
 	"github.com/Gigi-U/go-101.git/course/m1/c1basis/mtc1"
 	"github.com/Gigi-U/go-101.git/course/m1/c1basis/pgc1"
+	"github.com/Gigi-U/go-101.git/course/m1/c2functions/mtc2"
 	"github.com/Gigi-U/go-101.git/course/m1/c2functions/pgc2"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
+	"github.com/Gigi-U/go-101.git/prueba"
 	"github.com/Gigi-U/go-101.git/structures"
 	"github.com/Gigi-U/go-101.git/varandconst"
 )
@@ -84,6 +86,10 @@ func main() {
 	functions.Calcular()
 	functions.RetornoValor()
 
-	
+	fmt.Println("--------CLASE 01--------------")
+	mtc2.Exercise1()
+
+	fmt.Println("--------PRUEBA--------------")
+	prueba.Prueba()
 }
 
