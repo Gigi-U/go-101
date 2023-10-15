@@ -11,9 +11,11 @@ import (
 	"github.com/Gigi-U/go-101.git/course/m1/c2functions/pgc2"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/functions"
+	"github.com/Gigi-U/go-101.git/loopsandcycles"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
 	"github.com/Gigi-U/go-101.git/structures"
+	"github.com/Gigi-U/go-101.git/structures/examples"
 	"github.com/Gigi-U/go-101.git/varandconst"
 )
 
@@ -36,27 +38,31 @@ func main() {
 	//FOLDER: datatypes FILE: slice
 	datatypes.Slices()
 
-	fmt.Println("--------STRUCTURES--------------")
-	structures.Estructuras()
+	fmt.Println("--------LOOPS & CYCLES--------------")
+	//FOLDER: loopsandcycles 
 	fmt.Println("--------FOR --------------")
-	structures.For()
+	loopsandcycles.For()
 	fmt.Println("--------IF --------------")
-	structures.If()
+	loopsandcycles.If()
 	fmt.Println("--------SWITCH --------------")
-	structures.Switch()
+	loopsandcycles.Switch()
 	fmt.Println("--------WHILE --------------")
-	structures.While()
+	loopsandcycles.While()
 
 	fmt.Println("--------VARIABLES --------------")
+	//FOLDER: varandconst
 	varandconst.Variables()
 	fmt.Println("-------- CONSTANTES--------------")
 	varandconst.Const()
 
 	fmt.Println("--------POINTERS--------------")
+	//FOLDER: pointers
 	pointers.Pointers()
 
 	fmt.Println("\n--------OPERATORS--------------")
+	//FOLDER: operators
 	operators.Operators()
+
 
 	fmt.Println("--------CLASES--------------")
 	fmt.Println("--------CLASE 01--------------")
@@ -70,6 +76,7 @@ func main() {
 	pgc2.CalcularPromedio()
 	pgc2.ImpuestosSalario()
 	pgc2.Tutorial()
+	mtc2.Exercise1()
 
 	fmt.Println("--------FUNCTIONS--------------")
 	functions.Hello("Gisela","Urriza\n")
@@ -85,9 +92,15 @@ func main() {
 	functions.Calcular()
 	functions.RetornoValor()
 
-	fmt.Println("--------CLASE 01--------------")
-	mtc2.Exercise1()
-
 	fmt.Println("--------PRUEBA--------------")
+
+	fmt.Println("--------STRUCTURES--------------")
+	structures.Estructuras()
+	examples.EstructuraPersona()
+	structures.Etiquetas()
+	
+
+	fmt.Println("--------CLASE 03--------------")
+
 }
 
