@@ -26,7 +26,7 @@ type Usuario struct {
   
 func Etiquetas() {
 
-	p := Person{"Juan", "Perez", "43434343", "Calle falsa 123", Usuario{"GiiDev","giidev@gmail.com",""}}
+	p := Person{"Gise", "Urriza", "43434343", "Calle re-falsa 123", Usuario{"GiiDev","giidev@gmail.com",""}}
 	miJSON, err := json.Marshal(p)
 
 

@@ -98,7 +98,7 @@ func main() {
 	structures.Estructuras()
 	examples.EstructuraPersona()
 	structures.Etiquetas()
-	
+	structures.Metodos()
 
 	fmt.Println("--------CLASE 03--------------")
 

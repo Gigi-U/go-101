@@ -1,2 +1,5 @@
 package structures
 
+func Metodos(){
+	
+}
