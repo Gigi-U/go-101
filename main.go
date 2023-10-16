@@ -4,11 +4,11 @@ import (
 	// here you import all other packages
 	"fmt"
 
-	"github.com/Gigi-U/go-101.git/course/m1/c1basis"
-	"github.com/Gigi-U/go-101.git/course/m1/c1basis/mtc1"
-	"github.com/Gigi-U/go-101.git/course/m1/c1basis/pgc1"
-	"github.com/Gigi-U/go-101.git/course/m1/c2functions/mtc2"
-	"github.com/Gigi-U/go-101.git/course/m1/c2functions/pgc2"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/mtc1"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/pgc1"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c2functions/mtc2"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c2functions/pgc2"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/loopsandcycles"
@@ -97,9 +97,7 @@ func main() {
 	fmt.Println("--------STRUCTURES--------------")
 	structures.Estructuras()
 	examples.EstructuraPersona()
-	structures.Etiquetas()
-	structures.Metodos()
-
+	structures.Circ()
 	fmt.Println("--------CLASE 03--------------")
 
 }
