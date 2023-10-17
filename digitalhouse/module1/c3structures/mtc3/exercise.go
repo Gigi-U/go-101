@@ -22,16 +22,19 @@ var products = []Product {
 
 // or main() in a single folder application
 func MyProducts(){
-	// new product data
-	newProduct := Product{4,"Rail Chief Train", 15000,"Bachmann Trains - Ready To Run 130 Piece Electric Train Set","Toys"} 
-	newProduct.Save()	
 
-	// print All Products
+	// SAVE new product 
+	newProduct := Product{4,"Rail Chief Train", 15000,"Bachmann Trains - Ready To Run 130 Piece Electric Train Set","Toys"} 
+	newProduct.Save()
+	fmt.Println("------------------------NEW PRODUCT ADDED  - ID: ", newProduct.ID)
+	
+	// PRINT All Products
+	allProducts:= Product{}
 	fmt.Println("\nProducts List:")
-	GetAll()
+	allProducts.GetAll()
 	fmt.Println("---------------------------------------------------")
 
-	// find product by ID
+	// FIND product by ID
 	//productID := 6 // WITH ERROR
 	productId := 4 // CORRECT
 
@@ -50,12 +53,12 @@ func (newProduct Product)Save(){
 	return
 }
 
-//! Method to get All Products  - no se ve como un método.... 
-func GetAll()[]Product{
-	for _, p := range products {
-		ProductDetails(p)
+// Method to get All Products  
+func (prod Product)GetAll(){
+	for _,prod := range products {
+		ProductDetails(prod)
 	}
-	return products
+	return
 }
 
 // function to get Product by Id or error
@@ -67,7 +70,6 @@ func getById(id int) (Product, error) {
 	}
 	return Product{}, fmt.Errorf("\nProduct with ID %d not found", id)
 }
-
 
 // Function to print Products with details - Not requested
 func ProductDetails(p Product ) {
