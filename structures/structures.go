@@ -7,9 +7,9 @@ import (
 func Estructuras() {
 
 	type curso struct {
-		Nombre string
-		Profesor string
-		Pais string
+		Nombre string 
+		Profesor string 
+		Pais string 
 	}
 	// para instanciar la estructura curso:
 	db:= curso{
