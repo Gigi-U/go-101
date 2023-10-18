@@ -144,6 +144,9 @@ func main() {
 	pgc4.HerenciaGo()
 	pgc4.InterfacesGo()
 	pgc4.PointersGo()
+	pgc4.EmptyInterface()
+	pgc4.TypeAssertion()
+	pgc4.CompaniaEmpleado()
 	c4compuntinterf.Class4()
 
 }
