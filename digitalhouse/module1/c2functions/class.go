@@ -11,7 +11,7 @@ const (
 	maximo   = "maximo"
 )
 
-func Orquestador() {
+func Class2() {
 	minFunc, err := operation(minimo)
 	maxFunc, err := operation(maximo)
 	averageFunc, err := operation(promedio)

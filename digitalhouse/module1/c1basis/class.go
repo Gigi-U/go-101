@@ -2,7 +2,7 @@ package c1basis
 
 import "fmt"
 
-func Class(){
+func Class1(){
 
 	palabra:="abcdefghi"
 

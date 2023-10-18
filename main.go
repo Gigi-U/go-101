@@ -8,10 +8,14 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/mtc1"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/pgc1"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c2functions"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c2functions/mtc2"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c2functions/pgc2"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c3structures"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c3structures/mtc3"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c3structures/pgc3"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf/pgc4"
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/loopsandcycles"
 	"github.com/Gigi-U/go-101.git/operators"
@@ -22,6 +26,9 @@ import (
 )
 
 func main() {
+	fmt.Println("---------CLASS 01---------------")
+	fmt.Println("--------------------------------")
+
 	fmt.Println("---------DATATYPES-------------")
 	//FOLDER: datatypes FILE: types
 	datatypes.DataTypes()
@@ -65,20 +72,15 @@ func main() {
 	//FOLDER: operators
 	operators.Operators()
 
-
-	fmt.Println("--------CLASES--------------")
-	fmt.Println("--------CLASE 01--------------")
-	c1basis.Class()
+	fmt.Println("--------Homework C1--------------")
+	c1basis.Class1()
 	mtc1.Exercise1()
 	mtc1.Exercise2()
 	pgc1.Descuento()
 	pgc1.Prestamo()
 
-	fmt.Println("--------CLASE 02--------------")
-	pgc2.CalcularPromedio()
-	pgc2.ImpuestosSalario()
-	pgc2.Tutorial()
-	mtc2.Exercise1()
+	fmt.Println("---------CLASS 02---------------")
+	fmt.Println("--------------------------------")
 
 	fmt.Println("--------FUNCTIONS--------------")
 	// funcioness con parámetro
@@ -106,23 +108,43 @@ func main() {
 	// FUNCION QUE RETORNA VALOR
 	functions.RetornoValor()
 
-	fmt.Println("--------PRUEBA--------------")
+	fmt.Println("--------Homework C2--------------")
+	pgc2.CalcularPromedio()
+	pgc2.ImpuestosSalario()
+	pgc2.Tutorial()
+	mtc2.Exercise1()
+	c2functions.Class2()
+
+	fmt.Println("---------CLASS 03---------------")
+	fmt.Println("--------------------------------")
 
 	fmt.Println("--------STRUCTURES--------------")
 	// Structures  - example:
 	structures.Estructuras()
 	// Estructuras:
 	examples.EstructuraPersona()
-	// Structure Tags:
+	// Structure TAGS:
 	structures.Etiquetas()
-	// Methods:
+	// METHODS:
 	structures.Circ()
 	// Composición o Embedding Structs
 	structures.Rodados()
 
-	fmt.Println("--------CLASE 03--------------")
+	fmt.Println("--------Homework C3--------------")
 	pgc3.Alumni()
 	pgc3.VideoC3()
 	mtc3.MyProducts()
+	c3structures.Class3()
+
+	fmt.Println("--------CLASS 04--------------")
+	fmt.Println("--------------------------------")
+	fmt.Println("---COMPOSITION - POINTERS - INTERFACES---")
+
+	fmt.Println("--------Homework C4--------------")
+	pgc4.HerenciaGo()
+	pgc4.InterfacesGo()
+	pgc4.PointersGo()
+	c4compuntinterf.Class4()
+
 }
 
