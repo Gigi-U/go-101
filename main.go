@@ -4,8 +4,8 @@ import (
 	// here you import all other packages
 	"fmt"
 
-	"github.com/Gigi-U/go-101.git/composition"
-	"github.com/Gigi-U/go-101.git/datatypes"
+	"github.com/Gigi-U/go-101.git/week2/class2/composition"
+	"github.com/Gigi-U/go-101.git/week1/class1/datatypes"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/mtc1"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/pgc1"
@@ -17,14 +17,14 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c3structures/pgc3"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf/pgc4"
-	"github.com/Gigi-U/go-101.git/functions"
-	"github.com/Gigi-U/go-101.git/interfaces"
-	"github.com/Gigi-U/go-101.git/loopsandcycles"
-	"github.com/Gigi-U/go-101.git/operators"
-	"github.com/Gigi-U/go-101.git/pointers"
-	"github.com/Gigi-U/go-101.git/structures"
-	"github.com/Gigi-U/go-101.git/structures/examples"
-	"github.com/Gigi-U/go-101.git/varandconst"
+	"github.com/Gigi-U/go-101.git/week1/class2/functions"
+	"github.com/Gigi-U/go-101.git/week2/class2/interfaces"
+	"github.com/Gigi-U/go-101.git/week1/class1/loopsandcycles"
+	"github.com/Gigi-U/go-101.git/week1/class1/operators"
+	"github.com/Gigi-U/go-101.git/week2/class2/pointers"
+	"github.com/Gigi-U/go-101.git/week2/class1/structures"
+	"github.com/Gigi-U/go-101.git/week2/class1/structures/examples"
+	"github.com/Gigi-U/go-101.git/week1/class1/varandconst"
 )
 
 func main() {
