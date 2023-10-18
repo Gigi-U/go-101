@@ -1,4 +1,4 @@
-package pgc4
+package interfaces
 
 import "fmt"
 

@@ -4,6 +4,7 @@ import (
 	// here you import all other packages
 	"fmt"
 
+	"github.com/Gigi-U/go-101.git/composition"
 	"github.com/Gigi-U/go-101.git/datatypes"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c1basis/mtc1"
@@ -17,6 +18,7 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/c4ComPuntInterf/pgc4"
 	"github.com/Gigi-U/go-101.git/functions"
+	"github.com/Gigi-U/go-101.git/interfaces"
 	"github.com/Gigi-U/go-101.git/loopsandcycles"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
@@ -63,10 +65,6 @@ func main() {
 	varandconst.Variables()
 	fmt.Println("-------- CONSTANTES--------------")
 	varandconst.Const()
-
-	fmt.Println("--------POINTERS--------------")
-	//FOLDER: pointers
-	pointers.Pointers()
 
 	fmt.Println("\n--------OPERATORS--------------")
 	//FOLDER: operators
@@ -139,13 +137,14 @@ func main() {
 	fmt.Println("--------CLASS 04--------------")
 	fmt.Println("--------------------------------")
 	fmt.Println("---COMPOSITION - POINTERS - INTERFACES---")
-
+	composition.HerenciaGo()
+	interfaces.EmptyInterface()
+	interfaces.InterfacesGo()
+	interfaces.TypeAssertion()
+	//FOLDER: pointers
+	pointers.Pointers()
+	pointers.PointersGo()
 	fmt.Println("--------Homework C4--------------")
-	pgc4.HerenciaGo()
-	pgc4.InterfacesGo()
-	pgc4.PointersGo()
-	pgc4.EmptyInterface()
-	pgc4.TypeAssertion()
 	pgc4.CompaniaEmpleado()
 	c4compuntinterf.Class4()
 
