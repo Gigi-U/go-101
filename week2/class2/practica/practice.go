@@ -1,4 +1,4 @@
-package pgc4
+package practica
 
 import (
 	"fmt"

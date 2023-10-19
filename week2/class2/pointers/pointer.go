@@ -10,7 +10,7 @@ func Pointers(){
 	*puntero = "🐕" // le cambio el valor a dog desde el puntero
 
 	fmt.Printf("Tipo: %T, Valor: %s, Dirección: %v\n", dog, dog, &dog)
-	fmt.Printf("Tipo: %T, Valor: %v, Desreferenciación: %s", puntero, puntero, *puntero)
+	fmt.Printf("Tipo: %T, Valor: %v, Desreferenciación: %s\n", puntero, puntero, *puntero)
 
 	/* Se imprime: 
 	Tipo: string, Valor: 🐕, Dirección: 0xc000028070

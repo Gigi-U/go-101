@@ -24,6 +24,7 @@ func (l Libro) informacion() {
 
 }
 
+// o main
 func HerenciaGo() {
 	autor := Autor{
 		"Juan",

@@ -30,7 +30,7 @@ lleva * antes del tipo de dato ej. var p *int
 desreferenciar un puntero es obtener el valor almacenado en la dirección de memoria
 & = operador de dirección
 
-muchas veces necesitamos una variable para una función y que esta cambie su valor. Al pasarle la dirección de memoria, los cambios se hacen sobre ESA dirección y persistiran en cualquier parte del programa.
+muchas veces necesitamos una variable para una función, y que esta cambie su valor. Al pasarle la dirección de memoria, los cambios se hacen sobre ESA dirección y persistiran en cualquier parte del programa.
 
 Si en vez de enviar el puntero, enviasemos la variable,  GO generaría una copia exclusiva en el scope de nuestra función. Con el puntero puedo cambiar el valor de la dirección de memoria
 

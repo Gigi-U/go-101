@@ -51,6 +51,10 @@ type geometry interface {
 	area() float64
 	perim() float64
 }
+
+func newCircle(values float64) circle {
+	return circle{radius: values}
+}
 //	2 Generamos otro objeto geométrico. En este caso, un rectángulo que —lógicamente— tenga los mismos métodos:
 
 type rect struct {
@@ -62,9 +66,7 @@ func (r rect) area() float64 {
 func (r rect) perim() float64 {
 	return 2*r.width + 2*r.height
 }
-func newCircle(values float64) circle {
-	return circle{radius: values}
-}
+
 //	3 Modificaremos nuestra función details para que, en lugar de recibir un círculo, reciba una figura geométrica:
 
 func details(g geometry) {
