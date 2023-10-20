@@ -149,5 +149,6 @@ func main() {
 	fmt.Println("--------Homework C4--------------")
 	c4compuntinterf.Class4()
 	pgc4.InfoUsuario()
+	pgc4.PersonnelManagement()
 }
 

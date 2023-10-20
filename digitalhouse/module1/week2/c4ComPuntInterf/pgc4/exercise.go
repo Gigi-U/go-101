@@ -22,8 +22,6 @@ Para optimizar y ahorrar memoria requieren que la estructura usuarios ocupe el m
 		cambiarEdad: permite cambiar la edad.
 		cambiarCorreo: permite cambiar el correo.
 		cambiarContraseña: permite cambiar la contraseña. 
-
-
 */
 
 // Usuario Estructura que describe objeto Usuario
@@ -107,6 +105,15 @@ func InfoUsuario(){
 		fmt.Println("El puntero a Usuario no se creó correctamente.")
 	}
 }
+/*
+*CONSOLA:
+	Usuario: Gisela Urriza 43 gu@gmail.com 123456
+	Usuario: Cosme Fulanito 70 cf@gmail.com 1111111
+	El puntero a Usuario se creó correctamente.
+	Dirección del puntero: 0xc0000ce0f0
+	Dirección de la variable apuntada: 0xc0000ce0f0 
+*/
+
 
 
 // sin tengo 2 metodos con el mismo nombre y con la misma firma, correrlo.
