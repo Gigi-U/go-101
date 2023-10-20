@@ -81,7 +81,7 @@ func PersonnelManagement() {
 
 	// ingreso de datos por consola:
 	fmt.Print("Ingresar puesto en la empresa: ")
-	// con BUFIO Y STRINGS permite ingresar strings compuestos Scanln no lo reconoce y rompe el ingreso de datos
+	// Con BUFIO  permite ingresar strings compuestos. Scanln no los reconoce y rompe el ingreso de datos
 	position, _ = reader.ReadString('\n')
     position = strings.TrimSpace(position)
 
@@ -112,19 +112,22 @@ func PersonnelManagement() {
 	s.PrintEmployee()	
 }
 	
-// CONSOLA:
+
 /* 
-Ingresar puesto en la empresa: Desarrolladora Web
-Ingresa documento de identidad sin puntos: 27943381
-Ingresar nombre del Empleado: Sonia Gusela Urriza y Spreafichi
+*TERMINAL:
+
+Ingresar puesto en la empresa: Desarrolladora Backend
+Ingresa documento de identidad sin puntos: 27111111
+Ingresar nombre del Empleado: Sonia Gisela Urriza y Spreafichi
 Ingresa fecha de nacimiento en formato (dd/mm/yyyy): 26/02/1980
 
 ID: 1
         Position: Desarrollador Backend
-        ID: 27xxxxxx 
+        ID: 27111111 
         Name: Sonia Gisela Urriza y Spreafichi
         Date of Birth: 26/02/1980
-	 */
+	 
+*/
 	
 	
 	

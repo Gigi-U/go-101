@@ -106,7 +106,8 @@ func InfoUsuario(){
 	}
 }
 /*
-*CONSOLA:
+*TERMINAL:
+
 	Usuario: Gisela Urriza 43 gu@gmail.com 123456
 	Usuario: Cosme Fulanito 70 cf@gmail.com 1111111
 	El puntero a Usuario se creó correctamente.
