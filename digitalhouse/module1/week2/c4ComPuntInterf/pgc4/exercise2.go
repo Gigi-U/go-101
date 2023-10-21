@@ -2,6 +2,7 @@ package pgc4
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 	"strings"
@@ -33,15 +34,15 @@ Persona es una estructura que descibre el modelo de una persona.
 */
 
 type Person struct{
-	ID	int 
-	Name string
-	//Age int
-	DOB time.Time
+	ID			int		`json:"id"`
+	Name 		string	`json:"name"`
+	//Age 		int		`json:"age"`
+	DOB time.Time		`json:"dob"`
 }
 type Employee struct{
-	ID	int 
-	Position string
-	Person Person
+	ID			int 	`json:"id"`
+	Position 	string	`json:"position"`
+	Person Person		`json:"person"`
 }
 var reader = bufio.NewReader(os.Stdin)
 
@@ -103,13 +104,24 @@ func PersonnelManagement() {
 		fmt.Println("Error al analizar la fecha de nacimiento:", err)
 		return
 	} */
-
+	//  esto se asegura de que si ingreso mal la fecha de nacimiento me notifica el error. FUNCIONA CON DÍAS Y MESES no con años posteriores al actual
+		parsedDOB, err := time.Parse("02/01/2006", dob)
+	if err != nil {
+		fmt.Printf("Error al parsear la fecha de nacimiento: %v\n", err)
+		return
+	}
    // s := Person{ID: id, Name: name, DOB: time.Time{}, Age: age}
-    s := Employee{ID: id, Position: position, Person: Person{ ID: personId, Name: name, DOB: time.Time{}}}
+    s := Employee{ID: id, Position: position, Person: Person{ ID: personId, Name: name, DOB:parsedDOB}}
 
    // fmt.Printf("{%d %s %d %s}\n", s.ID, s.Name, s.Age, dob)
     //fmt.Printf("%d %s %s\n", s.ID, s.Name, dob)
 	s.PrintEmployee()	
+	//Structure Tags
+	miJSON, err := json.Marshal(s)
+	fmt.Println("------------Imprimiendo JSON")
+	fmt.Println(string(miJSON))
+	fmt.Println("------------Error")
+	fmt.Println(err)
 }
 	
 
@@ -126,7 +138,10 @@ ID: 1
         ID: 27111111 
         Name: Sonia Gisela Urriza y Spreafichi
         Date of Birth: 26/02/1980
-	 
+
+------------Imprimiendo JSON
+{"id":1,"position":"Desarrolladora Backend","person":{"id":27111111,"name":"Sonia Gisela Urriza y Spreafichi","dob":"1980-02-26T00:00:00Z"}}	
+!El dob queda horrible en el JSON. aun no logré cambiarlo	
 */
 	
 	

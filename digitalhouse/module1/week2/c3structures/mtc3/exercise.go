@@ -1,6 +1,7 @@
 package mtc3
 
 import (
+	"encoding/json"
 	"fmt"
 )
 
@@ -45,6 +46,12 @@ func MyProducts(){
 		fmt.Println("\n¡Product found!:")
 		ProductDetails(p)
 	}
+	//Structure Tags
+	miJSON, err := json.Marshal(p)
+	fmt.Println("------------Imprimiendo JSON")
+	fmt.Println(string(miJSON))
+	fmt.Println("------------Error")
+	fmt.Println(err)
 }
 
 //Method that saves a new product and adds it to the slice

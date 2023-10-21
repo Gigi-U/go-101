@@ -14,6 +14,7 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c3structures/mtc3"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c3structures/pgc3"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/mtc4"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/pgc4"
 	"github.com/Gigi-U/go-101.git/week1/class1/datatypes"
 	"github.com/Gigi-U/go-101.git/week1/class1/loopsandcycles"
@@ -150,5 +151,6 @@ func main() {
 	c4compuntinterf.Class4()
 	pgc4.InfoUsuario()
 	pgc4.PersonnelManagement()
+	mtc4.PrecioTotalProductos()
 }
 

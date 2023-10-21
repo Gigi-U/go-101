@@ -5,25 +5,6 @@ import (
 	"math"
 )
 
-func InterfacesGo() {
-	fmt.Println("-------Ejemplo #1-------")
-	ci := circle{radius: 5}
-	detailsC(ci)
-
-	fmt.Println("-------Ejemplo #2-------")
-	cir := newCircle(2)
-	fmt.Println(cir.area())
-	fmt.Println(cir.perim())
-
-	fmt.Println("-------Ejemplo #3-------")
-	r := newGeometry(rectType, 2, 3)
-	fmt.Println(r.area())
-	fmt.Println(r.perim())
-	c := newGeometry(circleType, 2)
-	fmt.Println(c.area())
-    fmt.Println(c.perim())
- 
-}
 //&Ejemplo #1
 type circle struct {
 	radius float64
@@ -91,6 +72,26 @@ const (
 		return circle{radius: values[0]}
 	}
 	return nil
+}
+// or main()
+func InterfacesGo() {
+	fmt.Println("-------Ejemplo #1-------")
+	ci := circle{radius: 5}
+	detailsC(ci)
+
+	fmt.Println("-------Ejemplo #2-------")
+	cir := newCircle(2)
+	fmt.Println(cir.area())
+	fmt.Println(cir.perim())
+
+	fmt.Println("-------Ejemplo #3-------")
+	r := newGeometry(rectType, 2, 3)
+	fmt.Println(r.area())
+	fmt.Println(r.perim())
+	c := newGeometry(circleType, 2)
+	fmt.Println(c.area())
+    fmt.Println(c.perim())
+ 
 }
 /*
 INTERFACES:

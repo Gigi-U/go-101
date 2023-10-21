@@ -24,7 +24,7 @@ type ResponsePersona struct{
 }
 
 func Class3() {
-
+ 
 }
 
 //!return fmt.Sprintf("hola %s", p.Nombre)

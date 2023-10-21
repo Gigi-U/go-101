@@ -2,6 +2,8 @@ package pgc4
 
 import (
 	"fmt"
+	"encoding/json"
+
 )
 
 /* 
@@ -26,11 +28,11 @@ Para optimizar y ahorrar memoria requieren que la estructura usuarios ocupe el m
 
 // Usuario Estructura que describe objeto Usuario
 type Usuario struct{
-	Nombre 		string 	
-	Apellido 	string	
-	Edad 		int 	
-	Correo		string 	
-	Contrasena 	string 	
+	Nombre 		string 	`json:"nombre"`
+	Apellido 	string	`json:"apellido"`
+	Edad 		int 	`json:"edad"`
+	Correo		string 	`json:"correo"`
+	Contrasena 	string 	`json:"-"`
 }
 
 
@@ -90,6 +92,14 @@ func InfoUsuario(){
 	// imprimiendo valor final de usuario
 	fmt.Sprintln( "el valor final de Usuario es: ")
 	u.InformacionUsuario()
+
+	//Structure Tags
+	miJSON, err := json.Marshal(u)
+	fmt.Println("------------Imprimiendo JSON")
+	fmt.Println(string(miJSON))
+	fmt.Println("------------Error")
+	fmt.Println(err)
+
 
 	// Estructura de control para comprobar que el puntero apunta a la variable
 	// 1) Verifica si el puntero se creó correctamente
