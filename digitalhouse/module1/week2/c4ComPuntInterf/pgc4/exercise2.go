@@ -82,7 +82,7 @@ func PersonnelManagement() {
 
 	// ingreso de datos por consola:
 	fmt.Print("Ingresar puesto en la empresa: ")
-	// Con BUFIO  permite ingresar strings compuestos. Scanln no los reconoce y rompe el ingreso de datos
+	// Con BUFIO  permite ingresar strings compuestos. Scanln no los reconoce y rompe el ingreso de datos --- PROBAR DE USAR: Scanf
 	position, _ = reader.ReadString('\n')
     position = strings.TrimSpace(position)
 

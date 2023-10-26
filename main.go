@@ -16,6 +16,8 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/mtc4"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/pgc4"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6/mt6"
 	"github.com/Gigi-U/go-101.git/digitalhouse/professor"
 	"github.com/Gigi-U/go-101.git/week1/class1/datatypes"
 	"github.com/Gigi-U/go-101.git/week1/class1/loopsandcycles"
@@ -157,5 +159,9 @@ func main() {
 	fmt.Println("--------professor--------------")
 
 	professor.Professor1()
+	c6.PaqueteOs()
+
+	mt6.Mayorista()
+
 }
 

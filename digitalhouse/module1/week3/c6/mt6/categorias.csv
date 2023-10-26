@@ -1,0 +1,1 @@
+ID,Categoria,ListaProductos[Codigo,Nombre,PrecioActual,CantidadActual];001,Electrodomesticos,[[200-Licuadora-70000.00-25],[201-Microondas-70000.00-25]];002,Muebles,[[300-Mesa-150000.00-5],[301-Silla-90000.00-5]];003,Herramientas,[[400-Destornillador-50000.00-10],[401-Martillo-90000.00-5]]
