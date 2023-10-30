@@ -4,32 +4,30 @@ import (
 	// here you import all other packages
 	"fmt"
 
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c1basis"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c1basis/mtc1"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c1basis/pgc1"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c2functions"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c2functions/mtc2"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week1/c2functions/pgc2"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c3structures"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c3structures/mtc3"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c3structures/pgc3"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/mtc4"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/pgc4"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6"
-	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6/mt6"
-	"github.com/Gigi-U/go-101.git/digitalhouse/professor"
-	"github.com/Gigi-U/go-101.git/week1/class1/datatypes"
-	"github.com/Gigi-U/go-101.git/week1/class1/loopsandcycles"
-	"github.com/Gigi-U/go-101.git/week1/class1/operators"
-	"github.com/Gigi-U/go-101.git/week1/class1/varandconst"
-	"github.com/Gigi-U/go-101.git/week1/class2/functions"
-	"github.com/Gigi-U/go-101.git/week2/class1/structures"
-	"github.com/Gigi-U/go-101.git/week2/class1/structures/examples"
-	"github.com/Gigi-U/go-101.git/week2/class2/composition"
-	"github.com/Gigi-U/go-101.git/week2/class2/interfaces"
-	"github.com/Gigi-U/go-101.git/week2/class2/pointers"
-	"github.com/Gigi-U/go-101.git/week2/class2/practica"
+	"github.com/Gigi-U/go-101.git/composition"
+	"github.com/Gigi-U/go-101.git/datatypes"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c1basis"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c1basis/mtc1"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c1basis/pgc1"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c2functions"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c2functions/mtc2"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week1/c2functions/pgc2"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c3structures"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c3structures/mtc3"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c3structures/pgc3"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c4ComPuntInterf"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c4ComPuntInterf/mtc4"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week2/c4ComPuntInterf/pgc4"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week3/c6"
+	"github.com/Gigi-U/go-101.git/DIGITALHOUSE/module1/week3/c6/mt6"
+	"github.com/Gigi-U/go-101.git/functions"
+	"github.com/Gigi-U/go-101.git/interfaces"
+	"github.com/Gigi-U/go-101.git/loopsandcycles"
+	"github.com/Gigi-U/go-101.git/operators"
+	"github.com/Gigi-U/go-101.git/pointers"
+	"github.com/Gigi-U/go-101.git/structures"
+	"github.com/Gigi-U/go-101.git/structures/examples"
+	"github.com/Gigi-U/go-101.git/varandconst"
 )
 
 func main() {
@@ -146,7 +144,7 @@ func main() {
 	interfaces.EmptyInterface()
 	interfaces.InterfacesGo()
 	interfaces.TypeAssertion()
-	practica.CompaniaEmpleado()
+	c3structures.CompaniaEmpleado()
 	//FOLDER: pointers
 	pointers.Pointers()
 	pointers.PointersGo()
@@ -156,11 +154,8 @@ func main() {
 	pgc4.PersonnelManagement()
 	mtc4.PrecioTotalProductos()
 
-	fmt.Println("--------professor--------------")
-
-	professor.Professor1()
+	fmt.Println("--------CLASS 06--------------")
 	c6.PaqueteOs()
-
 	mt6.Mayorista()
 
 }

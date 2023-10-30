@@ -30,6 +30,7 @@ func Ejemplo2() {
 
 func Ejemplo3() {
 	g := &Gato{"Misho"}
+	fmt.Println(g)
 	g = nil
 
 	g.Hablar()

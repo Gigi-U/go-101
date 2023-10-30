@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	//"strconv"
 	"strings"
 )
 
@@ -26,48 +25,31 @@ func Mayorista() {
 }
 
 func readfile(name string) {
+
+	//? 1) traer el archivo csv
+
+	// el readfile me pide el file y error
 	file, err := os.ReadFile(name)
+	// si no se puede acceder al file, se frena todo
 	if err != nil {
 		panic(err)
 	}
+	//? 2) limpiar los ;
+
 	data := strings.Split(string(file), ";")
-	//fmt.Println(data)
-	//var total float64
-	for i := 0; i < len(data)-1; i++ {
-		line := strings.Split(string(data[i]), ",")
-
-		fmt.Println("\n",line)
-
-/* 		 if i != 0 {
-			listaProductos, err := strconv.ParseFloat(line[2], 64)
-
-			for i := 0; i < len(listaProductos)-1; i++ {
-				
-
-			line2 := strings.Split(string(listaProductos[i]), "],[")
+	fmt.Println(data)
+	//? 3) recorrer el array de objetos y eliminar 
 
 
-			precioActual, err := strconv.ParseFloat(line2[2], 64)
 
-			if err != nil {
-				log.Panicln("no se pudo convertir el precio actual")
-			}
-			cantidadActual, err := strconv.ParseFloat(line[3], 64)
-			if err != nil {
-				log.Panicln("no se pudo convertir la cantidad actual")
-			} 		
+	//? 4) limpiar de las líneas las , y los corchetes
+
+	//? 5) guardar en variables precio y cantidad de cada producto
+
+	//? 6) sumar x categoria los valores resultantes
+
+	//? 7)imprimir cada categoria con su valor promedio
 
 
-			totalProducto := precio * cantidad
-
-			total += totalProducto
-		}
-		for i:=0;  i < len(line); i++ {
-			fmt.Printf("%s \t\t", line[i])
-			if i == len(line)-1 {
-				fmt.Print("\n")
-			}
-		}
-	}
-	fmt.Printf("\t\t%s \t\t%.2f\n", "total", total)  */
-}}
+	
+}

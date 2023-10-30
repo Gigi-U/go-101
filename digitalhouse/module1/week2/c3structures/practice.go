@@ -1,4 +1,4 @@
-package practica
+package c3structures
 
 import (
 	"fmt"
