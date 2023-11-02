@@ -19,6 +19,7 @@ paralelismo = delegar tareas a otros para que todas se realicen al mismo tiempo
  - portal o canal de comunicación entre diferentes goroutines
  - a veces es más fácil pasar punteros y waitgroups para pasar info , en vez de canales
  - hay que evitar CONDICIONES DE CARRERA, xq son difíciles de predecir (
+
 Una condición de carrera en un canal (channel) en Go ocurre cuando dos o más goroutines compiten para acceder y manipular los datos dentro del canal sin una sincronización adecuada. Esto puede llevar a resultados inesperados o incorrectos en la comunicación y el intercambio de datos entre goroutines. Las condiciones de carrera son un tipo común de error en la programación concurrente.
 
 En Go, los canales son una forma segura de comunicación entre goroutines, ya que están diseñados para evitar condiciones de carrera y proporcionan una sincronización intrínseca. Sin embargo, las condiciones de carrera pueden ocurrir si no se utilizan apropiadamente.
@@ -39,3 +40,12 @@ channel -  hacer que las Goroutines se comuniquen entre sí para avisar cuando r
 REGLAS DE ORO:
 1) siempre saber tiempo de vida de una goroutine (cuándo y cómo va a terminar)
 2) mantener el ciclo de vida de la goroutine en un único bloque
+
+
+
+waitgroup vs mutex
+
+MUTEX. se usa cuando un recurso es usado x 2 subrutinas para q no se cree una carrera
+se llama desde el paquete sync.
+mutex.Lock()
+mutex.Unlock()

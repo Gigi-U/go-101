@@ -20,11 +20,13 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week2/c4ComPuntInterf/pgc4"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6/mt6"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week4/c7concurrenciaparalelismo/mtc7"
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/interfaces"
 	"github.com/Gigi-U/go-101.git/loopsandcycles"
 	"github.com/Gigi-U/go-101.git/operators"
 	"github.com/Gigi-U/go-101.git/pointers"
+	"github.com/Gigi-U/go-101.git/prueba"
 	"github.com/Gigi-U/go-101.git/structures"
 	"github.com/Gigi-U/go-101.git/structures/examples"
 	"github.com/Gigi-U/go-101.git/varandconst"
@@ -155,8 +157,13 @@ func main() {
 	mtc4.PrecioTotalProductos()
 
 	fmt.Println("--------CLASS 06--------------")
-	c6.PaqueteOs()
+	c6.MesaC6()
 	mt6.Mayorista()
+	fmt.Println("--------CLASS 07--------------")
+	mtc7.EvenOrOdd()
 
+	fmt.Println("--------PRUEBA--------------")
+
+	prueba.Main()
 }
 
