@@ -21,6 +21,7 @@ import (
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week3/c6/mt6"
 	"github.com/Gigi-U/go-101.git/digitalhouse/module1/week4/c7concurrenciaparalelismo/mtc7"
+	"github.com/Gigi-U/go-101.git/digitalhouse/module2/week5/c9jsonapirest/pgc9"
 	"github.com/Gigi-U/go-101.git/functions"
 	"github.com/Gigi-U/go-101.git/interfaces"
 	"github.com/Gigi-U/go-101.git/loopsandcycles"
@@ -162,8 +163,14 @@ func main() {
 	fmt.Println("--------CLASS 07--------------")
 	mtc7.EvenOrOdd()
 
-	fmt.Println("--------PRUEBA--------------")
 
+	fmt.Println("--------CLASS 09--------------")
+	fmt.Println("\n----------FUNCTION MARSHAL---------------")
+	pgc9.Marshal()
+	fmt.Println("\n----------FUNCTION UNMARSHAL---------------")
+	pgc9.UnMarshal()
+
+	fmt.Println("\n--------PRUEBA--------------")
 	prueba.Main()
 }
 

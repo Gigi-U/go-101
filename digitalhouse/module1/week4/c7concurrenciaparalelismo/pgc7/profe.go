@@ -48,8 +48,7 @@ func Devolucion(channelDevolucion chan string){
 		channelDevolucion <- "Devolucion procesada"
 	}
 }
-func Prestamo(channelPrestamo chan string){
-	
+func Prestamo(channelPrestamo chan string){	
 }
 
 func PrintDevolucion(channelDevolucion chan string){
