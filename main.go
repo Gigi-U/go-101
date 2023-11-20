@@ -169,8 +169,11 @@ func main() {
 	pgc9.Marshal()
 	fmt.Println("\n----------FUNCTION UNMARSHAL---------------")
 	pgc9.UnMarshal()
+	pgc9.Marshal()
+	pgc9.NetHttp()
 
 	fmt.Println("\n--------PRUEBA--------------")
 	prueba.Main()
+
 }
 
