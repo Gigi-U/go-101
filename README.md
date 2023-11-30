@@ -1,4 +1,7 @@
-# go-101
+# go-101 
+<p align="center">
+  <img src="https://github.com/Gigi-U/go-101/assets/87839629/d1829224-e19c-4a6c-875b-5ec39c6de812" width="150">
+</p>
 
 1) create Github repository
 2) clone repository to local folder
